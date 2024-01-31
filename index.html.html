@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marurisha</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("https://raw.githubusercontent.com/Marurisha/Marurisha/main/001.png");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+      }
+      .banner {
+        text-align: center;
+        padding: 20px;
+      }
+      .social-links {
+        text-align: center;
+        margin-top: 20px;
+        margin: 0; /* Установка маргина в ноль */
+        padding: 0; /* Установка паддинга в ноль */
+      }
+      .social-links a {
+        display: block;
+        margin: 0 auto; /* Установка маргина в ноль */
+        text-align: center;
+      }
+      .social-links img {
+        width: var(--image-width, 50px);
+        height: var(--image-height, 50px);
+        transition: transform 0.3s ease-in-out;
+      }
+      .social-links img:hover {
+        transform: scale(1.2);
+      }
+      .social-links a::after {
+        content: url("https://raw.githubusercontent.com/Marurisha/Marurisha/main/003.png");
+        display: block;
+        width: var(--image-width, 50px);
+        height: var(--image-height, 50px);
+        margin: auto;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .social-links a:hover::after {
+        opacity: 1;
+      }
+      /* CSS переменные для ширины и высоты баннера */
+      .banner img {
+        width: var(--banner-width, 200px);
+        height: var(--banner-height, auto);
+      }
+
+      /* Медиа-запрос для уменьшения размера баннера на мобильных устройствах */
+      @media screen and (max-width: 600px) {
+        .banner img {
+          width: calc(var(--banner-width, 200px) / 2);
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <img
+        src="https://raw.githubusercontent.com/Marurisha/Marurisha/main/002.png"
+        alt="Баннер сайта"
+        style="--banner-width: 750px; --banner-height: 225px"
+      />
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@marurisha">
+        <img
+          style="--image-width: 400px; --image-height: 100px"
+          src="https://raw.githubusercontent.com/Marurisha/Marurisha/main/tt02.png"
+          alt="ТикТок"
+        />
+      </a>
+      <a href="https://www.instagram.com/ritamarurisha">
+        <img
+          style="--image-width: 400px; --image-height: 100px"
+          src="https://raw.githubusercontent.com/Marurisha/Marurisha/main/tt01.png"
+          alt="Соц.сеть2"
+        />
+      </a>
+      <a href="https://www.deviantart.com/marurisha/gallery">
+        <img
+          style="--image-width: 400px; --image-height: 100px"
+          src="https://raw.githubusercontent.com/Marurisha/Marurisha/main/tt04.png"
+          alt="Соц.сеть3"
+        />
+      </a>
+      <a href="https://marurishastudio.etsy.com">
+        <img
+          style="--image-width: 400px; --image-height: 100px"
+          src="https://raw.githubusercontent.com/Marurisha/Marurisha/main/tt05.png"
+          alt="Соц.сеть4"
+        />
+      </a>
+    </div>
+  </body>
+</html>
